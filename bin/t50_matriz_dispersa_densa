@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require 't50_matriz_dispersa_densa'
