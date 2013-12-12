@@ -18,9 +18,9 @@ class Matriz
 				@m=m
          	@f=c
             @c=c
-
-		  end
 =end
+		  end
+
 	#Suma entre dos matrices
         def +(other)         
                    suma = @m

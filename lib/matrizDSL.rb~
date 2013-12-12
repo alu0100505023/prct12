@@ -95,7 +95,7 @@ class MatrizDSL < Matriz
           end
           
           if (@modo == :consola)
-            puts @resultado.m
+            puts @resultado
           end
 
         when :resta

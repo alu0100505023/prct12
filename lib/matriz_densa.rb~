@@ -89,7 +89,7 @@ class Matriz_densa < Matriz
                         for j in 0...@c do
                                 print @m[i][j]        
                         end
-                        puts
+                        #puts
                 end
                 
         end

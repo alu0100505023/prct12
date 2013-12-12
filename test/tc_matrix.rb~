@@ -63,7 +63,7 @@ class TestMatrix < Test::Unit::TestCase
 
 
 	def prueba_dsl
-		@ejemplo = MatrizDSL.new("suma") do
+		@ejemplo = MatrixDSL.new("suma") do
 			opcion = "densa"
 			opcion = "consola"
 
