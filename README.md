@@ -8,6 +8,12 @@ Gema que contempla la creación de Matrices. Utiliza una representación para ma
 
 En la nueva práctica se pide implementar dos métodos max y min que devuelvan el valor máximo y el minimo respectivamente de una matriz.
 
+Se ha creado un lenguaje DSL para facilitar el trabajo con las matrices.
+
+Las dependencias halladas con Gemnasium son:
+-Gemfile
+-t50_matriz_dispersa_densa.gemspec
+
 
 ## Diseño
 

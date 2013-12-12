@@ -1,0 +1,10 @@
+api_key: 48cbc9341fbad672eecabd59f5f173e3    # You personal (secret) API key. Get it at https://gemnasium.com/settings/api_access
+profile_name: alu0100505023    # One of https://gemnasium.com/settings/github_setup
+project_name: prct12    # Will be available at https://gemnasium.com/profile_name/project_name
+project_branch: master        # /!\ If you don't use git, remove this line
+ignored_paths:                # Paths you want to ignore when searching for dependency files (from app root)
+  - features/
+  - spec/
+  - test/
+  - tmp/
+  - vendor/

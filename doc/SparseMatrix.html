@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: SparseMatrix</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./lib/matriz_dispersa_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/matriz_dispersa.rb">lib/matriz_dispersa.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Matriz.html">Matriz</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-2A">#*</a></li>
+          
+          <li><a href="#method-i-2B">#+</a></li>
+          
+          <li><a href="#method-i-2D">#-</a></li>
+          
+          <li><a href="#method-i-5B-5D">#[]</a></li>
+          
+          <li><a href="#method-i-coerce">#coerce</a></li>
+          
+          <li><a href="#method-i-col">#col</a></li>
+          
+          <li><a href="#method-i-comprobar">#comprobar</a></li>
+          
+          <li><a href="#method-i-max">#max</a></li>
+          
+          <li><a href="#method-i-min">#min</a></li>
+          
+          <li><a href="#method-i-mostrar">#mostrar</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./Gemfile.html">Gemfile</a></li>
+        
+          <li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
+        
+          <li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Fraccion.html">Fraccion</a></li>
+        
+          <li><a href="./Matriz.html">Matriz</a></li>
+        
+          <li><a href="./MatrizDSL.html">MatrizDSL</a></li>
+        
+          <li><a href="./Matriz_Dispersa.html">Matriz_Dispersa</a></li>
+        
+          <li><a href="./Matriz_densa.html">Matriz_densa</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./SparseMatrix.html">SparseMatrix</a></li>
+        
+          <li><a href="./SparseVector.html">SparseVector</a></li>
+        
+          <li><a href="./T50MatrizDispersaDensa.html">T50MatrizDispersaDensa</a></li>
+        
+          <li><a href="./TestMatrix.html">TestMatrix</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">SparseMatrix</h1>
+
+    <div id="description" class="description">
+      
+<p>Clase que se encarga de crear el hash</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="matrix-attribute-method" class="method-detail">
+          <a name="matrix"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">matrix</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(h = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Inicializador propio de la clase</p>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">h</span> = {})
+    <span class="ruby-ivar">@matrix</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>({})
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">SparseVector</span> 
+                            <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>]
+                    <span class="ruby-keyword">else</span>
+                          <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-constant">SparseVector</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>])
+                        <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="2A-method" class="method-detail ">
+          <a name="method-i-2A"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">*</span><span
+              class="method-args">(other)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operacion de la multiplicacion en la matriz dispersa. Realiza la operacion
+entre dos matrices dispersa y una dispersa con una densa</p>
+            
+
+            
+            <div class="method-source-code" id="2A-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 162</span>
+<span class="ruby-keyword">def</span> *(<span class="ruby-identifier">other</span>) 
+
+                        <span class="ruby-keyword">case</span> <span class="ruby-identifier">other</span>
+                        <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_Dispersa</span>
+                                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las columnas de una matriz no coinciden con las filas de la otra.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>.<span class="ruby-identifier">size</span>
+        <span class="ruby-identifier">sumatotal</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">mul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>                
+
+       <span class="ruby-comment">#for i in @matrix.keys do</span>
+                                <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">mul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+             <span class="ruby-comment">#for j in @matrix[i].vector.keys do</span>
+                                                 <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                        <span class="ruby-comment">#for k in @matrix[i].vector.keys do</span>
+                                                                                 <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+                            <span class="ruby-identifier">suma</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">k</span>] * <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>]
+                            <span class="ruby-identifier">sumatotal</span> = <span class="ruby-identifier">sumatotal</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">suma</span>;
+                        <span class="ruby-keyword">end</span>
+                        <span class="ruby-identifier">mul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">sumatotal</span>
+                        <span class="ruby-identifier">sumatotal</span> = <span class="ruby-value">0</span>
+            <span class="ruby-keyword">end</span>
+                                                <span class="ruby-identifier">mul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">mul_f</span>
+        <span class="ruby-keyword">end</span>
+
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">mul</span>
+                  <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_densa</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las columnas de una matriz no coinciden con las filas de la otra.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">f</span>
+                                <span class="ruby-identifier">sumatotal</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">mul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>                
+
+                                  <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">mul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+             <span class="ruby-comment">#for j in @matrix[i].vector.keys do</span>
+                                                 <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                   <span class="ruby-comment">#for k in @matrix[i].vector.keys do</span>
+                                                                <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+                      <span class="ruby-identifier">suma</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">k</span>] * <span class="ruby-identifier">other</span>.<span class="ruby-identifier">m</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+                      <span class="ruby-identifier">sumatotal</span> = <span class="ruby-identifier">sumatotal</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">suma</span>;
+                   <span class="ruby-keyword">end</span>
+                   <span class="ruby-identifier">mul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">sumatotal</span>
+                   <span class="ruby-identifier">sumatotal</span> = <span class="ruby-value">0</span>
+            <span class="ruby-keyword">end</span>
+                                                <span class="ruby-identifier">mul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">mul_f</span>
+        <span class="ruby-keyword">end</span> 
+
+
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">mul</span>
+                  <span class="ruby-keyword">else</span>
+                          <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;No se puede pasar #{other.inspect} a Matriz&quot;</span>)
+                  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2A-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2A-method -->
+
+      
+        <div id="2B-method" class="method-detail ">
+          <a name="method-i-2B"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">+</span><span
+              class="method-args">(other)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operacion de la suma en la matriz dispersa. Realiza la operacion entre dos
+matrices dispersa y una dispersa con una densa</p>
+            
+
+            
+            <div class="method-source-code" id="2B-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">other</span>)
+                  <span class="ruby-keyword">case</span> <span class="ruby-identifier">other</span>
+                  <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_Dispersa</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las matrices no son iguales en longitud.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>
+                                <span class="ruby-identifier">resul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                 <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+                                 <span class="ruby-identifier">r</span> = <span class="ruby-identifier">r</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                                  <span class="ruby-comment">#for r in @matrix.keys do</span>
+                                        <span class="ruby-identifier">resul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                         <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>  
+                                         <span class="ruby-comment">#for j in @matrix[r].vector.keys do       </span>
+                                           <span class="ruby-comment">#print &quot;  #{@matrix[r].vector[j] + other.matrix[r].vector[j]}  &quot;</span>
+                                                <span class="ruby-identifier">resul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>]
+                                   <span class="ruby-keyword">end</span>
+                                           <span class="ruby-comment">#puts</span>
+                                        <span class="ruby-identifier">resul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">resul_f</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">resul</span>
+                  <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_densa</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las matrices no son iguales en longitud.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">f</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">c</span>
+                                <span class="ruby-identifier">resul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">f</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+                                 <span class="ruby-comment">#for r in 1..other.f do</span>
+                                        <span class="ruby-identifier">resul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                        <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">c</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                                         <span class="ruby-comment">#for j in 1..other.c do</span>
+                <span class="ruby-comment">#print &quot;  #{@matrix[r].vector[j] + other.m[r - 1][j - 1]}&quot;</span>
+                                                <span class="ruby-identifier">resul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">m</span>[<span class="ruby-identifier">r</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-comment">#puts</span>
+                                        <span class="ruby-identifier">resul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">resul_f</span>
+                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">resul</span>
+                  <span class="ruby-keyword">else</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;No se puede pasar #{other.inspect} a Matriz&quot;</span>)
+                  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2B-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2B-method -->
+
+      
+        <div id="2D-method" class="method-detail ">
+          <a name="method-i-2D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">-</span><span
+              class="method-args">(other)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Operacion de la resta en la matriz dispersa. Realiza la operacion entre dos
+matrices dispersa y una dispersa con una densa</p>
+            
+
+            
+            <div class="method-source-code" id="2D-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 123</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">other</span>)
+                  <span class="ruby-keyword">case</span> <span class="ruby-identifier">other</span>
+                  <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_Dispersa</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las matrices no son iguales en longitud.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>
+                                <span class="ruby-identifier">resul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                      <span class="ruby-comment">#for r in @matrix.keys do</span>
+                                 <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+                                        <span class="ruby-identifier">resul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                   <span class="ruby-comment">#for j in @matrix[r].vector.keys do  </span>
+                                         <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>      
+                                           <span class="ruby-comment">#print &quot;  #{@matrix[r].vector[j] - other.matrix[r].vector[j]}  &quot;</span>
+                                                <span class="ruby-identifier">resul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">-</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>]
+                                   <span class="ruby-keyword">end</span>
+                                           <span class="ruby-comment">#puts</span>
+                                        <span class="ruby-identifier">resul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">resul_f</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">resul</span>
+                  <span class="ruby-keyword">when</span> <span class="ruby-constant">Matriz_densa</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Las matrices no son iguales en longitud.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">f</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">c</span>
+                                <span class="ruby-identifier">resul</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+                                <span class="ruby-comment">#for r in 1..other.f do</span>
+                                <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">f</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+                                        <span class="ruby-identifier">resul_f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-comment">#for j in 1..other.c do</span>
+                                        <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">c</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                <span class="ruby-comment">#print &quot;  #{@matrix[r].vector[j] - other.m[r - 1][j - 1]}&quot;</span>
+                                                <span class="ruby-identifier">resul_f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">-</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">m</span>[<span class="ruby-identifier">r</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-comment">#puts</span>
+                                        <span class="ruby-identifier">resul</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">resul_f</span>
+                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">resul</span>
+                  <span class="ruby-keyword">else</span>
+                                <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;No se puede pasar #{other.inspect} a Matriz&quot;</span>)
+                  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2D-method -->
+
+      
+        <div id="5B-5D-method" class="method-detail ">
+          <a name="method-i-5B-5D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">[]</span><span
+              class="method-args">(i)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Obtener un valor de la matriz dada una posicion</p>
+            
+
+            
+            <div class="method-source-code" id="5B-5D-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">i</span>)
+    <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 5B-5D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 5B-5D-method -->
+
+      
+        <div id="coerce-method" class="method-detail ">
+          <a name="method-i-coerce"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">coerce</span><span
+              class="method-args">(other)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo coerce</p>
+            
+
+            
+            <div class="method-source-code" id="coerce-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 259</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">coerce</span>(<span class="ruby-identifier">other</span>)
+        [<span class="ruby-identifier">other</span>,<span class="ruby-keyword">self</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- coerce-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- coerce-method -->
+
+      
+        <div id="col-method" class="method-detail ">
+          <a name="method-i-col"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">col</span><span
+              class="method-args">(j)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Devuelve la columna con el hash</p>
+            
+
+            
+            <div class="method-source-code" id="col-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">col</span>(<span class="ruby-identifier">j</span>)
+    <span class="ruby-identifier">c</span> = {}
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">c</span>[<span class="ruby-identifier">r</span>] = <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-keyword">if</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">j</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-constant">SparseVector</span>.<span class="ruby-identifier">new</span> <span class="ruby-identifier">c</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- col-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- col-method -->
+
+      
+        <div id="comprobar-method" class="method-detail ">
+          <a name="method-i-comprobar"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">comprobar</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Comprobacion de la dispersion</p>
+            
+
+            
+            <div class="method-source-code" id="comprobar-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 55</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">comprobar</span>
+          <span class="ruby-identifier">contar</span> = <span class="ruby-value">0</span>
+          <span class="ruby-identifier">contartotal</span> = <span class="ruby-value">0</span>
+          <span class="ruby-identifier">result</span> = <span class="ruby-value">0</span>
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+                   <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+                          <span class="ruby-identifier">contartotal</span> = <span class="ruby-identifier">contartotal</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                          <span class="ruby-keyword">if</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span> 
+                                  <span class="ruby-identifier">contar</span> = <span class="ruby-identifier">contar</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                          <span class="ruby-keyword">end</span>
+                  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+          <span class="ruby-identifier">result</span> = (<span class="ruby-identifier">contar</span> * <span class="ruby-value">100</span>) <span class="ruby-operator">/</span> <span class="ruby-identifier">contartotal</span>
+          <span class="ruby-keyword">if</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">60</span> 
+                   <span class="ruby-string">&quot;La matriz no es dispersa&quot;</span>
+          <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span></pre>
+            </div><!-- comprobar-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- comprobar-method -->
+
+      
+        <div id="max-method" class="method-detail ">
+          <a name="method-i-max"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">max</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Obtención del maximo de una matriz dispersa</p>
+            
+
+            
+            <div class="method-source-code" id="max-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 215</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">max</span>
+           
+        <span class="ruby-identifier">maximo</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-value">1</span>]
+   
+        <span class="ruby-comment">#for i in @matrix.keys do</span>
+                                        <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                                        <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                <span class="ruby-comment">#for j in @matrix[i].vector.keys do</span>
+                                                        <span class="ruby-comment">#@matrix[i].vector.keys do |j|</span>
+                                                        <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">maximo</span>
+                      <span class="ruby-identifier">maximo</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>]
+              <span class="ruby-keyword">end</span>
+           <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+                                 <span class="ruby-keyword">return</span> <span class="ruby-identifier">maximo</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- max-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- max-method -->
+
+      
+        <div id="min-method" class="method-detail ">
+          <a name="method-i-min"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">min</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Obtención del maximo de una matriz dispersa</p>
+            
+
+            
+            <div class="method-source-code" id="min-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 240</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">min</span>
+
+   <span class="ruby-identifier">minimo</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-value">1</span>]
+        
+        <span class="ruby-comment">#for i in @matrix.keys do</span>
+                                        <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">size</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-comment">#for j in @matrix[i].vector.keys do</span>
+                                                        <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                                                        <span class="ruby-identifier">j</span> = <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">minimo</span>
+                      <span class="ruby-identifier">minimo</span> = <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">j</span>]
+              <span class="ruby-keyword">end</span>
+           <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">minimo</span>
+
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- min-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- min-method -->
+
+      
+        <div id="mostrar-method" class="method-detail ">
+          <a name="method-i-mostrar"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">mostrar</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Imprime la matriz dispersa</p>
+            
+
+            
+            <div class="method-source-code" id="mostrar-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_dispersa.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mostrar</span>
+<span class="ruby-keyword">for</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@matrix</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+                          <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@matrix</span>[<span class="ruby-identifier">r</span>].<span class="ruby-identifier">vector</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;#{@matrix[r].vector[j]}  &quot;</span>  
+                        <span class="ruby-keyword">end</span>
+                        <span class="ruby-identifier">puts</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- mostrar-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- mostrar-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
